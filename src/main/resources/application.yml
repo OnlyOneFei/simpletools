@@ -1,0 +1,10 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /simpleTools
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/
+    name: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
