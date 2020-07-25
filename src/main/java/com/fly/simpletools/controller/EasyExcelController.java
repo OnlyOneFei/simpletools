@@ -34,7 +34,6 @@ public class EasyExcelController {
 
     /**
      * @param response 响应消息
-     * @return com.fly.simpletools.util.ResponseData
      * @author Mr_Fei
      * @date 2020/6/24 10:33
      * @description 获取Excel信息
@@ -65,9 +64,12 @@ public class EasyExcelController {
         return ResponseData.success();
     }
 
+    /**
+     * 读取图片，并生成Excel文档信息
+     */
   /*  public static void main(String[] args) throws IOException {
         String filePath = "F:\\var\\测试文件.xlsx";
-        String picturePath="F:\\1-中浩资料\\文档信息\\Logo图片文件\\变压器图片.png";
+        String picturePath="F:\\文档信息\\Logo图片文件\\变压器图片.png";
         String sheetName = "文件数量";
         byte[] fileBytes = FileUtils.readFileToByteArray(new File(picturePath));
 
