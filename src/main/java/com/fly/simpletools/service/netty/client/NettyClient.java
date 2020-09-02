@@ -55,13 +55,13 @@ public class NettyClient {
      *
      * @param args args
      */
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         String host = "127.0.0.1";
         int port = 8000;
         // 发送json字符串
         String msg = "{\"name\":\"admin\",\"age\":27}\n";
         NettyClient nettyClient = new NettyClient(host, port);
         nettyClient.connect(msg);
-    }
+    }*/
 
 }

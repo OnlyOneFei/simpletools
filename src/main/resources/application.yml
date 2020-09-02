@@ -8,3 +8,6 @@ spring:
     name: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+
+netty:
+  port: 8000

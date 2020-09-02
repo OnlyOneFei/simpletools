@@ -9,6 +9,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 /**
@@ -23,8 +24,8 @@ public class NettyServer {
     /**
      * 端口号
      */
-//    @Value("${netty.port}")
-    private int port = 8000;
+    @Value("${netty.port}")
+    private int port;
 
     /**
      * 启动服务器方法
