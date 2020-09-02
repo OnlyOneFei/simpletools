@@ -1,6 +1,5 @@
 package com.fly.simpletools.util.qrcode;
 
-import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.event.AnalysisEventListener;
 import com.alibaba.excel.util.StringUtils;
@@ -65,10 +64,10 @@ public class QRCodeVCardPOListener extends AnalysisEventListener<QRCodeVCardPO> 
         log.info("所有数据解析完成！");
     }
 
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
         // 写法1：
         String fileName = "F:/QRCode/员工信息_二维码.xlsx";
         // 这里 需要指定读用哪个class去读，然后读取第一个sheet 文件流会自动关闭
         EasyExcel.read(fileName, QRCodeVCardPO.class, new QRCodeVCardPOListener()).sheet().doRead();
-    }
+    }*/
 }
